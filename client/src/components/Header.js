@@ -10,8 +10,8 @@ const Header = ({ title, onAdd, showAdd }) => {
       {/* <h3>process.env.EMAIL_ALUNO</h3> */}
       {location.pathname === "/" && (
         <Button
-          color={showAdd ? "black" : "blue"}
-          text={showAdd ? "Close" : "Add+"}
+          color={showAdd ? "black" : "red"}
+          text={showAdd ? "Fechar" : "Adicionar+"}
           onClick={onAdd}
         />
       )}
@@ -20,7 +20,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 };
 
 Header.defaultProps = {
-  title: "BIA 2024 RONNE",
+  title: "BIA 2024 RONNE Pipeline",
 };
 
 export default Header;
